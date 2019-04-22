@@ -97,8 +97,71 @@ nav{
 .mn-width{
     min-width: 100%;
 }
-
-
+.mainTeam{
+    background: #000;
+    padding: 96px 0 163px 0;
+    color: white;
+}
+.mainTeam h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 27px;
+}
+.line{
+    height: 3px;
+    width: 100px;
+    background: #fcac45;
+    position: relative;
+    left: 46.5%;
+}
+.teamCards{
+    padding-top: 87px;
+    display: flex;
+    text-align: center;
+}
+.card{
+    padding: 0 20px;
+}
+.photo{
+    background: #d7d7d7;
+    height: 129px;
+    width: 129px;
+    border-radius: 50%;
+    margin: 19px auto;
+}
+.name{
+    font-size: 20px;
+    padding-bottom: 11px;
+}
+.position{
+    padding-bottom: 36px;
+    font-size: 16px;
+}
+.aboutPosition{
+    font-size: 14px;
+}
+.services{
+    padding: 98px 0;
+    text-align: center;
+}
+.services h1{
+    padding-bottom: 30px;
+}
+.servicesList{
+    display: flex;
+}
+.services .aboutServices{
+    padding:54px 0 102px 0;
+    color: #6c6c6c;
+    font-size: 16px;
+}
+.services h3{
+    text-transform: uppercase;
+    padding: 27px 0 21px 0;
+}
+.aboutService{
+    font-size: 14px;
+}
 
 
 @media screen and (max-width:1276px){
@@ -147,12 +210,13 @@ nav{
         font-size: 25px;
         cursor: pointer;
     }
-    nav{
+    nav {
         width: 100%;
     }
     .topnav.responsive{
     position: relative;
-    
+    top: 40px;
+    left: -100px;
 }
     header.topnav.responsive{
         height: 340px;
@@ -176,7 +240,54 @@ nav{
 .welcome p{
     font-size: 15px;
 }
-  
+    .mainTeam{
+    padding: 76px 0 123px 0;
+}
+.mainTeam h1{
+    padding-bottom: 20px;
+}
+.line{
+    left: 45%;
+}
+    .teamCards{
+    padding-top: 57px;
+    flex-direction: column;
+}
+  .photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+.name{
+    font-size: 18px;
+}
+.position{
+    padding-bottom: 36px;
+    font-size: 16px;
+}
+.aboutPosition{
+    font-size: 14px;
+}
+    .services{
+    padding: 90px 0;
+}
+.services h1{
+    padding-bottom: 25px;
+}
+.servicesList{
+    flex-direction: column;
+}
+    .services img{
+        margin-top: 20px;
+}
+.services .aboutServices{
+    padding:50px 0 90px 0;
+    font-size: 14px;
+}
+.services h3{
+    padding: 22px 0 16px 0;
+}
 }
 
 
