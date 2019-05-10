@@ -162,7 +162,42 @@ nav{
 .aboutService{
     font-size: 14px;
 }
-
+.clients{
+    background: #000;
+    padding: 99px 0 210px 0;
+    color: white;
+    text-align: center;
+}
+.clients h1{
+    margin-bottom: 21px;
+    font-size: 44px;
+}
+.listClients{
+    padding-top: 111px;
+}
+.listClients img{
+    margin-left: 27px;
+}
+.testimonials{
+    background: #000;
+    padding: 96px 0 174px 0;
+    color: #fff;
+    text-align: center;
+}
+.testimonials h1{
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.testimonials .line{
+    margin: 27px 0 115px 0;
+}
+.testimonials p{
+    font-size: 18px;
+}
+.testimonials p:last-child{
+    margin-top: 47px;
+}
 
 @media screen and (max-width:1276px){
     nav{
