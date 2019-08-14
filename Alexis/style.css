@@ -3,14 +3,14 @@
     margin: 0px;
     padding: 0px;
 }
-h1{
+header h1{
     width: 100px;
     padding-top: 20px;
     padding-bottom: 25px;
     margin-left: 160px;
     font-family: 'Dancing Script', cursive;
 }
-h1::first-letter{
+header h1::first-letter{
     color: #fc5f45;
 }
 nav ul{
@@ -32,6 +32,18 @@ nav a{
 }
 nav .clear{
     clear: right;
+}
+.menu{
+    display: none;
+    float: right;
+    margin-top: -50px;
+    margin-right: 50px;
+}
+.menu>div{
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 2px;
 }
 .main{
     background-image: url(img/main.jpg);
@@ -82,7 +94,38 @@ nav .clear{
     padding-top: 10px;
     padding-left: 80px;
 }
-
+.about_content{
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+}
+.about_content h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.about_content img{
+    min-width: 500px;
+   height: auto;
+    margin-top: 150px;
+    border: 7px solid #cccccc;
+    margin-bottom: 180px;
+}
+.about_content>div{
+    height: auto;
+    margin-left: -50px;
+    z-index: 1;
+    background-color: #fff;
+    margin-top: 200px;
+    margin-bottom: 143px;
+    padding: 35px 80px;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+}
+.about_content p{
+    color: #6f6f6f;
+    text-indent: 1em;
+    text-align: justify;
+}
 
 
 
@@ -98,7 +141,7 @@ nav .clear{
     nav li{
         margin-right: 10px;
     }
-    h1{
+    header h1{
     padding-bottom: 15px;
     margin-left: 100px;
 }
@@ -117,6 +160,85 @@ nav .clear{
 }
     .block img{
     padding-left: 70px;
+}
+    .content{
+        width: 80%;
+    }
+    .about_content img{
+        width: 300px;
+        height: 400px;
+         margin-top: 100px;
+    }
+    .about_content>div{
+    margin-top: 150px;
+    margin-bottom: 120px;
+    padding: 35px 40px;
+}
+    .about_content{
+    width: 80%;
+}
+}
+@media screen and (min-width:520px) and (max-width:767px){
+    header h1{
+        margin-left: 40px;
+        padding-bottom: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .content p:first-child{
+        padding-top: 70px;
+        font-size: 35px;
+    }
+    .main{
+        height: 400px;
+    }
+.main button{
+    margin:40px 0px 30px 170px;
+}
+    .block{
+    width: 160px;
+}
+    .block img{
+    padding-left: 50px;
+}
+}
+@media screen and  (min-width:320px) and (max-width:520px){
+     header h1{
+        margin-left: 70px;
+        padding-bottom: 20px;
+    }
+     nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .content p:first-child{
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    .main{
+        height: 650px;
+    }
+.main button{
+    margin:20px 0px 30px 100px;
+}
+    .for_blocks{
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    .block{
+        width: 150px;
+        background-color: antiquewhite;
+        margin-bottom: 10px;
+    }
+    .block img{
+    padding-left: 60px;
 }
 }
 
