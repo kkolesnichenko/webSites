@@ -105,8 +105,8 @@ nav .clear{
     padding-bottom: 30px;
 }
 .about_content img{
-    min-width: 500px;
-   height: auto;
+    width: 500px;
+   min-height: 200px;
     margin-top: 150px;
     border: 7px solid #cccccc;
     margin-bottom: 180px;
@@ -126,12 +126,101 @@ nav .clear{
     text-indent: 1em;
     text-align: justify;
 }
+#focus, #team{
+    background-color: #f7f7f7;
+}
+.focus_content, .team_content{
+    margin: 0 auto;
+    
+}
+.focus_content>p:first-child, .portfolio_content>h1, .team_content>p:first-child{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    padding-top: 150px;
+    padding-bottom: 35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.focus_content>p:nth-child(2), .portfolio_content>p, .team_content>p:nth-child(2){
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.focus_blocks, .team_blocks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.focus_blocks>div, .team_blocks>div{
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    margin-right: 28px;
+    margin-bottom: 150px;
+    padding: 68px 10px 0px 10px;
+    text-align: center;
+}
+.focus_blocks>div:last-child, .team_blocks>div:last-child{
+    margin-right: 0px;
+    border-bottom: 3px solid #feb960;
+}
+.focus_blocks>div:first-child, .team_blocks>div:first-child{
+     border-bottom: 3px solid #fc5f45;
+}
+.focus_blocks>div:nth-child(2), .team_blocks>div:nth-child(2){
+     border-bottom: 3px solid #38c695;
+}
+.focus_blocks>div:nth-child(3), .team_blocks>div:nth-child(3){
+     border-bottom: 3px solid #b27cf5;
+}
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 34px 10px 31px 10px;
+}
+#video{
+    height: 300px;
+    background-color: #3f4049;
+}
+.video_content{
+    margin: 0 auto;
+}
+.video_content p{
+    color:#fff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 150px;
+}
+.portfolio_blocks{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+.example{
+    width: 270px;
+    height: 200px;
+    background-color: firebrick;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.example{
+    background-image: url(img/phone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.team_blocks>div img{
+   width: 200px;
+    height: 200px;
+}
 
 
 
 
 
-@media (min-width:768px) and (max-width:1130px){
+@media screen and (min-width:768px) and (max-width:1130px){
     nav ul{
     margin-top: -55px;
     margin-right: 10px;
@@ -165,13 +254,12 @@ nav .clear{
         width: 80%;
     }
     .about_content img{
-        width: 300px;
-        height: 400px;
+        min-width: 400px;
          margin-top: 100px;
     }
     .about_content>div{
     margin-top: 150px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     padding: 35px 40px;
 }
     .about_content{
@@ -204,6 +292,21 @@ nav .clear{
 }
     .block img{
     padding-left: 50px;
+}
+    .about_content{
+    flex-direction: column;
+    width: 70%;
+}
+.about_content img{
+    max-width: 400px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+.about_content>div{
+    margin-left: 50px;
+    margin-top: -50px;
+    margin-bottom: 80px;
+    padding: 20px 50px;
 }
 }
 @media screen and  (min-width:320px) and (max-width:520px){
@@ -239,6 +342,36 @@ nav .clear{
     }
     .block img{
     padding-left: 60px;
+}
+    .about_content{
+    flex-direction: column;
+    width: 80%;
+}
+.about_content img{
+    max-width: 260px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.about_content>div{
+    margin-left: 50px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 20px 40px;
+}
+.focus_content>p:first-child, .team_content>p:first-child{
+    font-size: 35px;
+    padding-top: 130px;
+    padding-bottom: 25px;
+}
+    .focus_blocks, .team_blocks{
+        flex-direction: column;
+        align-items: center;
+    }
+.focus_blocks>div, .team_blocks>div{
+    width: 200px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 68px 10px 0px 10px;
 }
 }
 
